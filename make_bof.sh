@@ -1,5 +1,7 @@
 #!/bin/bash
 
+HOME=$(pwd)
+
 cd ./BOF/Kerberoast/SOURCE
 make
 cd .. # ./BOF/Kerberoast/
@@ -17,10 +19,10 @@ pwd
 ls -l
 echo
 
-MANIFEST=$(cat ./artifacts/extension.json | base64 -w 0)
-COMMAND_NAME=$(cat ./artifacts/extension.json | jq -r .command_name)
-tar -czvf ../../../packages/$COMMAND_NAME.tar.gz .
-cd ../../../packages
+MANIFEST=$(cat extension.json | base64 -w 0)
+COMMAND_NAME=$(cat extension.json | jq -r .command_name)
+tar -czvf $HOME/$COMMAND_NAME.tar.gz .
+cd $HOME/packages
 echo
 pwd
 ls -l
