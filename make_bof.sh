@@ -21,9 +21,15 @@ echo
 
 MANIFEST=$(cat extension.json | base64 -w 0)
 COMMAND_NAME=$(cat extension.json | jq -r .command_name)
+echo "[+] executing: tar -czvf $HOME/$COMMAND_NAME.tar.gz ."
 tar -czvf $HOME/$COMMAND_NAME.tar.gz .
-cd $HOME/packages
+cd $HOME
 echo
 pwd
 ls -l
+cd ./packages
+echo
+pwd
+ls -l
+echo
 bash -c "echo \"\" | ~/minisign -s ~/minisign.key -S -m ./$COMMAND_NAME.tar.gz -t \"$MANIFEST\" -x $COMMAND_NAME.minisig"
