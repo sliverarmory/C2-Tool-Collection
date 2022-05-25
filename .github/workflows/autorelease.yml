@@ -40,6 +40,7 @@ jobs:
 
       - name: Kerberoast
         run: |
+          chmod +x ./make_bof.sh
           ./make_bof.sh c2tc-kerberoast
 
       - name: "Publish Release"
