@@ -1,0 +1,32 @@
+{
+  "name": "C2-Tool-Collection Kerberoast",
+  "version": "v0.0.0",
+  "command_name": "c2tc-kerberoast",
+  "extension_author": "c2biz",
+  "original_author": "outflanknl",
+  "repo_url": "https://github.com/sliverarmory/C2-Tool-Collection",
+  "help": "A BOF tool to list all SPN enabled user/service accounts or request service tickets (TGS-REP)",
+  "depends_on": "coff-loader",
+  "entrypoint": "go",
+  "files": [
+    {
+      "os": "windows",
+      "arch": "amd64",
+      "path": "Kerberoast.o"
+    }
+  ],
+  "arguments": [
+    {
+      "name": "task",
+      "desc": "list, list-no-aes, roast or roast-no-aes",
+      "type": "string",
+      "optional": false
+    },
+    {
+      "name": "account",
+      "desc": "optional sAMAccountName filter (default all)",
+      "type": "string",
+      "optional": true
+    }
+  ]
+}
