@@ -55,6 +55,16 @@ jobs:
           chmod +x ./make_bof.sh
           ./make_bof.sh Psw
 
+      - name: Smbinfo
+        run: |
+          chmod +x ./make_bof.sh
+          ./make_bof.sh Smbinfo
+
+      - name: Askcreds
+        run: |
+          chmod +x ./make_bof.sh
+          ./make_bof.sh Askcreds
+
       - name: "Publish Release"
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
