@@ -1,0 +1,19 @@
+{
+    "name": "C2-Tool-Collection Psw BOF",
+    "version": "v0.0.0",
+    "command_name": "c2tc-psw",
+    "extension_author": "c2biz",
+    "original_author": "outflanknl",
+    "repo_url": "https://github.com/sliverarmory/C2-Tool-Collection",
+    "help": "Show Window titles from processes with active Windows",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+      {
+        "os": "windows",
+        "arch": "amd64",
+        "path": "Psw.o"
+      }
+    ],
+    "arguments": []
+  }

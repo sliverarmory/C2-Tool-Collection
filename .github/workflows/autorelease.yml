@@ -43,7 +43,17 @@ jobs:
       - name: Kerberoast
         run: |
           chmod +x ./make_bof.sh
-          ./make_bof.sh c2tc-kerberoast
+          ./make_bof.sh Kerberoast
+
+      - name: Winver
+        run: |
+          chmod +x ./make_bof.sh
+          ./make_bof.sh Winver
+
+      - name: Psw
+        run: |
+          chmod +x ./make_bof.sh
+          ./make_bof.sh Psw
 
       - name: "Publish Release"
         uses: "marvinpinto/action-automatic-releases@latest"
