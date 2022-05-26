@@ -27,6 +27,8 @@ jobs:
           mv ./minisign ~/minisign
           touch ~/minisign.key && chmod 600 ~/minisign.key
           echo -e "${{ secrets.MINISIGN_PRIVATE_KEY }}" > ~/minisign.key
+          ls -l ~/
+          realpath ~/
 
       - name: Check out code
         uses: actions/checkout@v2

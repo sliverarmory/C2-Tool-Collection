@@ -32,5 +32,6 @@ cd ./packages
 echo
 pwd
 ls -l
-echo
+echo "[+] Listing ~/"
+ls -l ~/
 bash -c "echo \"\" | ~/minisign -s ~/minisign.key -S -m ./$COMMAND_NAME.tar.gz -t \"$MANIFEST\" -x $COMMAND_NAME.minisig"
