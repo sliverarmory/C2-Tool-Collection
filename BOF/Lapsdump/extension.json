@@ -1,0 +1,26 @@
+{
+    "name": "C2-Tool-Collection Lapsdump BOF",
+    "version": "v0.0.0",
+    "command_name": "c2tc-lapsdump",
+    "extension_author": "c2biz",
+    "original_author": "outflanknl",
+    "repo_url": "https://github.com/sliverarmory/C2-Tool-Collection",
+    "help": "Dump LAPS passwords from specified computers within Active Directory",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+      {
+        "os": "windows",
+        "arch": "amd64",
+        "path": "Lapsdump.o"
+      }
+    ],
+    "arguments": [
+      {
+        "name": "accountName",
+        "desc": "Computer Name",
+        "type": "string",
+        "optional": false
+      }
+    ]
+  }

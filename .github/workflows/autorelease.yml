@@ -64,6 +64,21 @@ jobs:
         run: |
           chmod +x ./make_bof.sh
           ./make_bof.sh Askcreds
+      
+      - name: AddMachineAccount
+        run: |
+          chmod +x ./make_bof.sh
+          ./make_bof.sh AddMachineAccount
+
+      - name: Lapsdump
+        run: |
+          chmod +x ./make_bof.sh
+          ./make_bof.sh Lapsdump
+
+      - name: PetitPotam
+        run: |
+          chmod +x ./make_bof.sh
+          ./make_bof.sh PetitPotam
 
       - name: "Publish Release"
         uses: "marvinpinto/action-automatic-releases@latest"

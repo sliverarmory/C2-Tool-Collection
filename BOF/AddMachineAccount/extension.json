@@ -1,0 +1,32 @@
+{
+    "name": "C2-Tool-Collection AddMachineAccount BOF",
+    "version": "v0.0.0",
+    "command_name": "c2tc-addmachineaccount",
+    "extension_author": "c2biz",
+    "original_author": "outflanknl",
+    "repo_url": "https://github.com/sliverarmory/C2-Tool-Collection",
+    "help": "AddMachineAccount [Computername] [Password <Optional>]",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+      {
+        "os": "windows",
+        "arch": "amd64",
+        "path": "AddMachineAccount.o"
+      }
+    ],
+    "arguments": [
+      {
+        "name": "accountName",
+        "desc": "Computer Name",
+        "type": "string",
+        "optional": false
+      },
+      {
+        "name": "password",
+        "desc": "Password (Optional)",
+        "type": "string",
+        "optional": true
+      }
+    ]
+  }
