@@ -19,13 +19,13 @@
     {
       "name": "task",
       "desc": "list, list-no-aes, roast or roast-no-aes",
-      "type": "string",
+      "type": "wstring",
       "optional": false
     },
     {
       "name": "account",
       "desc": "optional sAMAccountName filter (default all)",
-      "type": "string",
+      "type": "wstring",
       "optional": true
     }
   ]
