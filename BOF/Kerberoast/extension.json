@@ -6,6 +6,7 @@
   "original_author": "outflanknl",
   "repo_url": "https://github.com/sliverarmory/C2-Tool-Collection",
   "help": "A BOF tool to list all SPN enabled user/service accounts or request service tickets (TGS-REP)",
+  "long_help": "Pass \"*\" for \"all\"\n\nExample: c2tc-kerberoast roast *\n",
   "depends_on": "coff-loader",
   "entrypoint": "go",
   "files": [
