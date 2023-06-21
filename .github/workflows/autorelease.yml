@@ -105,6 +105,11 @@ jobs:
           chmod +x ./make_bof.sh
           ./make_bof.sh Psm
 
+      - name: Psx
+        run: |
+          chmod +x ./make_bof.sh
+          ./make_bof.sh Psx
+
       - name: "Publish Release"
         uses: "marvinpinto/action-automatic-releases@latest"
         with:

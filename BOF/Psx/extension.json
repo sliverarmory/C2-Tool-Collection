@@ -1,0 +1,24 @@
+{
+    "name": "C2-Tool-Collection Psx BOF",
+    "version": "v0.0.0",
+    "command_name": "c2tc-psx",
+    "extension_author": "c2biz",
+    "original_author": "outflanknl",
+    "repo_url": "https://github.com/sliverarmory/C2-Tool-Collection",
+    "help": "show (detailed) information from all processes running on the system",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+      {
+        "os": "windows",
+        "arch": "amd64",
+        "path": "Psx.x64.o"
+      },
+      {
+        "os": "windows",
+        "arch": "386",
+        "path": "Psx.x86.o"
+      }
+    ],
+    "arguments": []
+  }
