@@ -80,6 +80,11 @@ jobs:
           chmod +x ./make_bof.sh
           ./make_bof.sh PetitPotam
 
+      - name: Domaininfo
+        run: |
+          chmod +x ./make_bof.sh
+          ./make_bof.sh Domaininfo
+
       - name: "Publish Release"
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
