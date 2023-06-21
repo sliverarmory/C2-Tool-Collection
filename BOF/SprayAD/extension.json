@@ -1,0 +1,43 @@
+{
+    "name": "C2-Tool-Collection SprayAD BOF",
+    "version": "v0.0.0",
+    "command_name": "c2tc-spray-ad",
+    "extension_author": "c2biz",
+    "original_author": "outflanknl",
+    "repo_url": "https://github.com/sliverarmory/C2-Tool-Collection",
+    "help": "Perform a Kerberos or ldap password spraying attack against Active Directory",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+      {
+        "os": "windows",
+        "arch": "amd64",
+        "path": "SprayAD.x64.o"
+      },
+      {
+        "os": "windows",
+        "arch": "386",
+        "path": "SprayAD.x86.o"
+      }
+    ],
+    "arguments": [
+      {
+        "name": "password",
+        "desc": "password to test",
+        "type": "wstring",
+        "optional": false
+      },
+      {
+        "name": "filter",
+        "desc": "filter <example: admin*>",
+        "type": "wstring",
+        "optional": false
+      },
+      {
+        "name": "authservice",
+        "desc": "ldap",
+        "type": "wstring",
+        "optional": false
+      }
+    ]
+  }
