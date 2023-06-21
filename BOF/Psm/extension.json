@@ -1,0 +1,31 @@
+{
+    "name": "C2-Tool-Collection Psm BOF",
+    "version": "v0.0.0",
+    "command_name": "c2tc-psm",
+    "extension_author": "c2biz",
+    "original_author": "outflanknl",
+    "repo_url": "https://github.com/sliverarmory/C2-Tool-Collection",
+    "help": "show detailed information from a specific process id",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+      {
+        "os": "windows",
+        "arch": "amd64",
+        "path": "Psm.x64.o"
+      },
+      {
+        "os": "windows",
+        "arch": "386",
+        "path": "Psm.x86.o"
+      }
+    ],
+    "arguments": [
+      {
+        "name": "processid",
+        "desc": "processid",
+        "type": "int",
+        "optional": false
+      }
+    ]
+  }
