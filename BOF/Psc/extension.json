@@ -1,0 +1,24 @@
+{
+    "name": "C2-Tool-Collection Psc BOF",
+    "version": "v0.0.0",
+    "command_name": "c2tc-psc",
+    "extension_author": "c2biz",
+    "original_author": "outflanknl",
+    "repo_url": "https://github.com/sliverarmory/C2-Tool-Collection",
+    "help": "show detailed information from processes with established TCP and RDP connections",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+      {
+        "os": "windows",
+        "arch": "amd64",
+        "path": "Psc.x64.o"
+      },
+      {
+        "os": "windows",
+        "arch": "386",
+        "path": "Psc.x86.o"
+      }
+    ],
+    "arguments": []
+  }

@@ -90,6 +90,11 @@ jobs:
           chmod +x ./make_bof.sh
           ./make_bof.sh KerbHash
 
+      - name: Psc
+        run: |
+          chmod +x ./make_bof.sh
+          ./make_bof.sh Psc
+
       - name: "Publish Release"
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
