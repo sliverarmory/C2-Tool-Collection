@@ -1,0 +1,24 @@
+{
+    "name": "C2-Tool-Collection Winver BOF",
+    "version": "v0.0.0",
+    "command_name": "c2tc-domaininfo",
+    "extension_author": "c2biz",
+    "original_author": "outflanknl",
+    "repo_url": "https://github.com/sliverarmory/C2-Tool-Collection",
+    "help": "enumerate domain information using Active Directory Domain Services",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+      {
+        "os": "windows",
+        "arch": "amd64",
+        "path": "Domaininfo.x64.o"
+      },
+      {
+          "os": "windows",
+          "arch": "386",
+          "path": "Domaininfo.x86.o"
+      }
+    ],
+    "arguments": []
+  }
