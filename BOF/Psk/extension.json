@@ -1,0 +1,24 @@
+{
+    "name": "C2-Tool-Collection Psk BOF",
+    "version": "v0.0.0",
+    "command_name": "c2tc-psk",
+    "extension_author": "c2biz",
+    "original_author": "outflanknl",
+    "repo_url": "https://github.com/sliverarmory/C2-Tool-Collection",
+    "help": "show detailed information from the windows kernel and loaded driver modules",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+      {
+        "os": "windows",
+        "arch": "amd64",
+        "path": "Psk.x64.o"
+      },
+      {
+        "os": "windows",
+        "arch": "386",
+        "path": "Psk.x86.o"
+      }
+    ],
+    "arguments": []
+  }

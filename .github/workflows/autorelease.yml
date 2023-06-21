@@ -95,6 +95,11 @@ jobs:
           chmod +x ./make_bof.sh
           ./make_bof.sh Psc
 
+      - name: Psk
+        run: |
+          chmod +x ./make_bof.sh
+          ./make_bof.sh Psk
+
       - name: "Publish Release"
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
