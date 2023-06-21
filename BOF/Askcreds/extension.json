@@ -19,7 +19,7 @@
       {
         "name": "reason",
         "desc": "Reason (Optional)",
-        "type": "string",
+        "type": "wstring",
         "optional": true
       }
     ]
