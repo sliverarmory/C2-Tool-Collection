@@ -1,0 +1,24 @@
+{
+    "name": "C2-Tool-Collection StartWebClient BOF",
+    "version": "v0.0.0",
+    "command_name": "c2tc-startwebclient",
+    "extension_author": "c2biz",
+    "original_author": "outflanknl",
+    "repo_url": "https://github.com/sliverarmory/C2-Tool-Collection",
+    "help": "Starting WebClient Service Programmatically",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+      {
+        "os": "windows",
+        "arch": "amd64",
+        "path": "StartWebClient.x64.o"
+      },
+      {
+        "os": "windows",
+        "arch": "386",
+        "path": "StartWebClient.x86.o"
+      }
+    ],
+    "arguments": []
+  }
