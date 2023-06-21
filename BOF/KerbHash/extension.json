@@ -1,0 +1,43 @@
+{
+    "name": "C2-Tool-Collection KerbHash BOF",
+    "version": "v0.0.0",
+    "command_name": "c2tc-kerbhash",
+    "extension_author": "c2biz",
+    "original_author": "outflanknl",
+    "repo_url": "https://github.com/sliverarmory/C2-Tool-Collection",
+    "help": "port of the Mimikatz/Rubeus hash command",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+      {
+        "os": "windows",
+        "arch": "amd64",
+        "path": "KerbHash.x64.o"
+      },
+      {
+        "os": "windows",
+        "arch": "386",
+        "path": "KerbHash.x86.o"
+      }
+    ],
+    "arguments": [
+      {
+        "name": "password",
+        "desc": "password",
+        "type": "wstring",
+        "optional": false
+      },
+      {
+        "name": "username",
+        "desc": "username",
+        "type": "wstring",
+        "optional": false
+      },
+      {
+        "name": "domain.fqdn",
+        "desc": "domain.fqdn",
+        "type": "wstring",
+        "optional": false
+      }
+    ]
+  }
