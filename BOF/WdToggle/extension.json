@@ -1,0 +1,24 @@
+{
+    "name": "C2-Tool-Collection WdToggle BOF",
+    "version": "v0.0.0",
+    "command_name": "c2tc-wdtoggle",
+    "extension_author": "c2biz",
+    "original_author": "outflanknl",
+    "repo_url": "https://github.com/sliverarmory/C2-Tool-Collection",
+    "help": "Patch lsass to enable WDigest credential caching",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+      {
+        "os": "windows",
+        "arch": "amd64",
+        "path": "WdToggle.x64.o"
+      },
+      {
+        "os": "windows",
+        "arch": "386",
+        "path": "WdToggle.x86.o"
+      }
+    ],
+    "arguments": []
+  }

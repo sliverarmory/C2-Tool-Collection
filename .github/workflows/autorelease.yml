@@ -120,6 +120,11 @@ jobs:
           chmod +x ./make_bof.sh
           ./make_bof.sh StartWebClient
 
+      - name: WdToggle
+        run: |
+          chmod +x ./make_bof.sh
+          ./make_bof.sh WdToggle
+
       - name: "Publish Release"
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
