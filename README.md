@@ -16,14 +16,22 @@ The toolset currently consists of the following tools:
 |**[Askcreds](BOF/Askcreds)**|Collect passwords by simply asking.|
 |**[CVE-2022-26923](BOF/CVE-2022-26923)**|CVE-2022-26923 Active Directory (ADCS) Domain Privilege Escalation exploit.|
 |**[Domaininfo](BOF/Domaininfo)**|Enumerate domain information using Active Directory Domain Services.|
+|**[FindObjects](BOF/FindObjects)**|Enumerate processes for specific loaded modules or process handles.|
 |**[Kerberoast](BOF/Kerberoast)**|List all SPN enabled user/service accounts or request service tickets (TGS-REP) which can be cracked offline using HashCat.|
 |**[KerbHash](BOF/KerbHash)**|Hash password to kerberos keys (rc4_hmac, aes128_cts_hmac_sha1, aes256_cts_hmac_sha1, and des_cbc_md5).|
+|**[Klist](BOF/Klist)**|Displays a list of currently cached Kerberos tickets.|
 |**[Lapsdump](BOF/Lapsdump)**|Dump LAPS passwords from specified computers within Active Directory.|
 |**[PetitPotam](BOF/PetitPotam)**|BOF implementation of the PetitPotam attack published by [@topotam77](https://twitter.com/topotam77).|
+|**[Psc](BOF/Psc)**|Show detailed information from processes with established TCP and RDP connections.|
 |**[Psw](BOF/Psw)**|Show window titles from processes with active windows.|
+|**[Psx](BOF/Psx)**|Show detailed information from all processes running on the system and provides a summary of installed security products and tools.|
+|**[Psm](BOF/Psm)**|Show detailed information from a specific process id (loaded modules, tcp connections e.g.).|
+|**[Psk](BOF/Psk)**|Show detailed information from the windows kernel and loaded driver modules and provides a summary of installed security products (AV/EDR drivers).|
+|**[ReconAD](BOF/ReconAD)**|Use ADSI to query Active Directory objects and attributes.|
 |**[Smbinfo](BOF/Smbinfo)**|Gather remote system version info using the NetWkstaGetInfo API without having to run the Cobalt Strike port (tcp-445) scanner.|
 |**[SprayAD](BOF/SprayAD)**|Perform a fast Kerberos or LDAP password spraying attack against Active Directory.|
 |**[StartWebClient](BOF/StartWebClient)**|Start the WebClient Service programmatically from user context using a service trigger.|
+|**[WdToggle](BOF/WdToggle)**|Patch lsass to enable WDigest credential caching and to circumvent Credential Guard (if enabled).|
 |**[Winver](BOF/Winver)**|Display the version of Windows that is running, the build number and patch release (Update Build Revision).|
 
 ***Others***
@@ -35,3 +43,4 @@ The toolset currently consists of the following tools:
 ## How to use
 1. Clone this repository.
 2. Each tool contains an individual README.md file with instructions on how to compile and use the tool. With this approach, we want to give the user the choice of which tool they want to use without having to compile all the other tools.
+3. If you would like to compile all the BOF tools at once, type `make` within the [BOF](BOF/) subfolder.
