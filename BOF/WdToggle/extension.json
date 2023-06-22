@@ -13,11 +13,6 @@
         "os": "windows",
         "arch": "amd64",
         "path": "WdToggle.x64.o"
-      },
-      {
-        "os": "windows",
-        "arch": "386",
-        "path": "WdToggle.x86.o"
       }
     ],
     "arguments": []
