@@ -13,7 +13,12 @@
     {
       "os": "windows",
       "arch": "amd64",
-      "path": "Kerberoast.o"
+      "path": "Kerberoast.x64.o"
+    },
+    {
+      "os": "windows",
+      "arch": "386",
+      "path": "Kerberoast.x86.o"
     }
   ],
   "arguments": [

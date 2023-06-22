@@ -12,7 +12,12 @@
       {
         "os": "windows",
         "arch": "amd64",
-        "path": "Psw.o"
+        "path": "Psw.x64.o"
+      },
+      {
+        "os": "windows",
+        "arch": "386",
+        "path": "Psw.x86.o"
       }
     ],
     "arguments": []

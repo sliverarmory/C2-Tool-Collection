@@ -12,7 +12,12 @@
       {
         "os": "windows",
         "arch": "amd64",
-        "path": "PetitPotam.o"
+        "path": "PetitPotam.x64.o"
+      },
+      {
+        "os": "windows",
+        "arch": "386",
+        "path": "PetitPotam.x86.o"
       }
     ],
     "arguments": [
