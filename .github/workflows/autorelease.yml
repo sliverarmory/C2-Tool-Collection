@@ -125,6 +125,11 @@ jobs:
           chmod +x ./make_bof.sh
           ./make_bof.sh WdToggle
 
+      - name: Klist
+        run: |
+          chmod +x ./make_bof.sh
+          ./make_bof.sh Klist
+
       - name: "Publish Release"
         uses: "marvinpinto/action-automatic-releases@latest"
         with:

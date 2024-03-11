@@ -1,0 +1,37 @@
+{
+    "name": "C2-Tool-Collection Klist BOF",
+    "version": "v0.0.0",
+    "command_name": "c2tc-klist",
+    "extension_author": "c2biz",
+    "original_author": "outflanknl",
+    "repo_url": "https://github.com/sliverarmory/C2-Tool-Collection",
+    "help": "Displays a list of currently cached Kerberos tickets.",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+      {
+        "os": "windows",
+        "arch": "amd64",
+        "path": "Klist.x64.o"
+      },
+      {
+        "os": "windows",
+        "arch": "386",
+        "path": "Klist.x86.o"
+      }
+    ],
+    "arguments": [
+      {
+        "name": "mode",
+        "desc": "'purge' or 'get <spn>'",
+        "type": "wstring",
+        "optional": true
+      },
+      {
+        "name": "spn",
+        "desc": "HOST/FLAPDROL",
+        "type": "wstring",
+        "optional": true
+      }
+    ]
+  }
