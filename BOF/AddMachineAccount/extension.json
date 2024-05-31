@@ -24,13 +24,13 @@
       {
         "name": "accountName",
         "desc": "Computer Name",
-        "type": "string",
+        "type": "wstring",
         "optional": false
       },
       {
         "name": "password",
         "desc": "Password (Optional)",
-        "type": "string",
+        "type": "wstring",
         "optional": true
       }
     ]
