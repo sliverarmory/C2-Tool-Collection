@@ -24,7 +24,7 @@
       {
         "name": "accountName",
         "desc": "Computer Name",
-        "type": "string",
+        "type": "wstring",
         "optional": false
       }
     ]
