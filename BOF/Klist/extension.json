@@ -25,7 +25,7 @@
         "name": "mode",
         "desc": "'purge' or 'get <spn>'",
         "type": "wstring",
-        "optional": true
+        "optional": false
       },
       {
         "name": "spn",
