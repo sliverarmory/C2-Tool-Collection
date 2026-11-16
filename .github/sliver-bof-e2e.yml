@@ -1,0 +1,33 @@
+schema: sliver-bof-e2e/v1
+
+sliver:
+  version: 422044af0dbfd75e4588756f9c7a4e3536eba376
+
+defaults:
+  bof_executor: reflektor
+  entrypoint: go
+  modes: [session, beacon]
+  command_timeout: 2m
+
+suites:
+  - name: windows-amd64
+    target:
+      os: windows
+      arch: amd64
+    tests:
+      - name: winver
+        object: BOF/Winver/Winver.x64.o
+        expect:
+          output:
+            contains: ['OS build number:']
+
+  - name: windows-386
+    target:
+      os: windows
+      arch: '386'
+    tests:
+      - name: winver
+        object: BOF/Winver/Winver.x86.o
+        expect:
+          output:
+            contains: ['OS build number:']
